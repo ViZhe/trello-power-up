@@ -6,7 +6,7 @@ const projectSelector = document.getElementById('projectList')
 t.render(() => {
   t.get('organization', 'shared', 'PROJECTS')
     .then((projectList) => {
-      projectList.each((item) => {
+      Object.keys(projectList).forEach((item) => {
         projectSelector.insertAdjacentHTML('afterend', `<option value="${item}">${item}</option>`)
       })
     })

@@ -12,8 +12,8 @@ t.render(() => {
   const projectSelector = document.getElementById('projectList')
   t.get('organization', 'shared', 'PROJECTS')
     .then((projectList) => {
-      projectList.each((item) => {
-        projectSelector.insertAdjacentHTML('afterend', `<option value="${item}">${item}</option>`)
+      Object.keys(projectList).forEach((item) => {
+        projectSelector.insertAdjacentHTML('afterend', `<li>${item}</li>`)
       })
     })
 })
@@ -21,7 +21,9 @@ t.render(() => {
 
 document.getElementById('projectInputSave').addEventListener('click', () => {
   const projectInput = document.getElementById('projectInput')
-  t.set('organization', 'shared', 'PROJECTS', projectInput.value)
+  t.set('organization', 'shared', 'PROJECTS', {
+    [projectInput.value]: projectInput.value,
+  })
 })
 
 document.addEventListener('click', (e) => {
