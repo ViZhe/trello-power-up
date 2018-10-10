@@ -25,4 +25,8 @@ document.getElementById('save').addEventListener('click', () => (
     .then(() => {
       t.closePopup()
     })
+    .get('card', 'shared', 'project')
+    .then((data) => {
+      console.log(data)
+    })
 ))

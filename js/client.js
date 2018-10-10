@@ -27,20 +27,29 @@ const getBadges = t => (
         title: 'Project',
         text: 'Project Field',
         color: 'red',
-        items: [{
-          text: '#135 attempt to fix trello/api-docs#134',
-        }, {
-          text: '#133 Removing duplicate `status` property',
-        }, {
-          text: '#131 Update New Action Default',
-        }, {
-          alwaysVisible: true,
-          text: 'Add new project',
-        }],
-        search: {
-          count: 10,
-          placeholder: 'Search pull requests',
-          empty: 'No pull requests found',
+        callback: (context) => {
+          context.get('card', 'shared', 'project')
+            .then((data) => {
+              console.log(1, data)
+            })
+            .popup({
+              title: 'Select project',
+              items: [{
+                text: '#135 attempt to fix trello/api-docs#134',
+              }, {
+                text: '#133 Removing duplicate `status` property',
+              }, {
+                text: '#131 Update New Action Default',
+              }, {
+                alwaysVisible: true,
+                text: 'Add new project',
+              }],
+              search: {
+                count: 10,
+                placeholder: 'Search pull requests',
+                empty: 'No pull requests found',
+              },
+            })
         },
       }]
     })
