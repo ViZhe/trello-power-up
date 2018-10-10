@@ -45,5 +45,6 @@ document.addEventListener('click', (e) => {
 document.addEventListener('keyup', (e) => {
   if (e.keyCode === 27) {
     t.closeOverlay().done()
+    t.set('organization', 'shared', 'PROJECTS', [])
   }
 })
