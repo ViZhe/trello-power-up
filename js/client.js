@@ -1,6 +1,6 @@
 const SettingsCallback = t => (
   t.modal({
-    url: './board-bar.html',
+    url: './modal/settings/index.html',
     height: 400,
   })
     .then(() => (
@@ -31,7 +31,7 @@ const getBadges = t => (
         callback: context => (
           context.popup({
             title: 'Select project',
-            url: './popup/select-project.html',
+            url: './popup/select-project/index.html',
             height: 184,
           })
         ),
