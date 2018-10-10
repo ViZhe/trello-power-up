@@ -12,7 +12,7 @@ t.render(() => {
     })
   t.get('card', 'shared', 'project')
     .then((savedProject) => {
-      if (savedProject && /[a-z]+/.test(savedProject)) {
+      if (savedProject) {
         projectSelector.value = savedProject
       }
       t.sizeTo('#content')
