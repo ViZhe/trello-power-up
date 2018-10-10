@@ -42,13 +42,6 @@ const getBadges = t => (
           placeholder: 'Search pull requests',
           empty: 'No pull requests found',
         },
-        callback: context => (
-          context.popup({
-            title: 'Select project',
-            url: './popup/select-project/index.html',
-            height: 184,
-          })
-        ),
       }]
     })
 )
