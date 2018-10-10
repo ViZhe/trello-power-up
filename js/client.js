@@ -26,7 +26,7 @@ const getBadges = t => (
 
       return [{
         title: 'Project',
-        text: 'Static',
+        text: 'Project Field',
         color: null,
         callback: context => (
           context.popup({

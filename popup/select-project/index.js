@@ -7,7 +7,7 @@ t.render(() => {
   t.get('organization', 'shared', 'PROJECTS')
     .then((projectList) => {
       Object.keys(projectList).forEach((item) => {
-        projectSelector.insertAdjacentHTML('afterend', `<option value="${item}">${item}</option>`)
+        projectSelector.innerHTML += `<option value="${item}">${item}</option>`
       })
     })
   t.get('card', 'shared', 'project')
