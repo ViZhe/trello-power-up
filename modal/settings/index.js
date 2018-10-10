@@ -6,7 +6,6 @@ const randomBadgeColor = () => (
   ['green', 'yellow', 'red', 'none'][Math.floor(Math.random() * 4)]
 )
 
-t.set('organization', 'shared', 'PROJECTS', {})
 console.log('ready render')
 t.getAll()
   .then((data) => {
@@ -17,7 +16,7 @@ const projectSelector = document.getElementById('projectList')
 t.get('organization', 'shared', 'PROJECTS')
   .then((projectList) => {
     Object.keys(projectList).forEach((item) => {
-      projectSelector.innerHTML += `<li>${item}</li>`
+      projectSelector.innerHTML += `<li>${item.text} / ${item.color}</li>`
     })
   })
 

@@ -40,7 +40,7 @@ const getBadges = t => (
               context.popup({
                 title: 'Select project',
                 items: [
-                  ...projectsList,
+                  ...Object.values(projectsList),
                   {
                     alwaysVisible: true,
                     text: 'Add new project',
