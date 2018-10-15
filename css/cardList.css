@@ -1,0 +1,12 @@
+
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -8px;
+}
+
+.cardList__item {
+  width: calc(20% - 8px);
+  margin-right: 8px;
+  margin-bottom: 8px;
+}

@@ -7,6 +7,10 @@
   "plugins": [
     "babel"
   ],
+  "globals": {
+    "TrelloPowerUp": true,
+    "Promise": true
+  },
   "rules": {
     "object-curly-spacing": 0,
     "semi": [

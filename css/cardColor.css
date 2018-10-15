@@ -1,0 +1,40 @@
+
+.cardColor {
+  height: 40px;
+  border-radius: 4px;
+}
+
+.cardColor_selected {
+  opacity: .2;
+}
+
+.cardColor_yellow {
+  background-color: #F2D600;
+}
+.cardColor_purple {
+  background-color: #C377E0;
+}
+.cardColor_blue {
+  background-color: #0079BF;
+}
+.cardColor_red {
+  background-color: #EB5A46;
+}
+.cardColor_green {
+  background-color: #61BD4F;
+}
+.cardColor_orange {
+  background-color: #FFAB4A;
+}
+.cardColor_black {
+  background-color: #355263;
+}
+.cardColor_sky {
+  background-color: #00C2E0;
+}
+.cardColor_pink {
+  background-color: #FF80CE;
+}
+.cardColor_lime {
+  background-color: #51E898;
+}
