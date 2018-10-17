@@ -1,11 +1,22 @@
 
 .cardColor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 40px;
   border-radius: 4px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
 }
 
-.cardColor_selected {
-  opacity: .2;
+.cardColor_interactive {
+  cursor: pointer;
+  transition: opacity .25s ease
+}
+
+.cardColor_interactive:hover {
+  opacity: .7;
 }
 
 .cardColor_yellow {
@@ -37,4 +48,8 @@
 }
 .cardColor_lime {
   background-color: #51E898;
+}
+
+.cardColor_selected {
+  opacity: .2;
 }
