@@ -9,7 +9,7 @@ const storyPointsStats = t => (
   t.modal({
     title: 'Story Points Stats',
     accentColor: '#8E45AD',
-    url: '/modal/storyPointsStats/index.html',
+    url: '/trello-power-up/modal/storyPointsStats/index.html',
     height: 400,
   })
 )
@@ -43,7 +43,7 @@ const getColorByNum = (num) => {
 const storyPointsCallback = async t => (
   t.popup({
     title: 'Set Story Points',
-    url: '/popup/setStoryPoints/index.html',
+    url: '/trello-power-up/popup/setStoryPoints/index.html',
   })
 )
 
@@ -51,7 +51,7 @@ const getBadgeStoryPoints = async (t) => {
   const badgeStoryPoints = {
     title: 'Story points',
     text: 'Unestimated',
-    icon: '/media/story-points.svg',
+    icon: '/trello-power-up/media/story-points.svg',
     color: 'red',
     callback: storyPointsCallback,
   }
