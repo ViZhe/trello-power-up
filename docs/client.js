@@ -1,4 +1,5 @@
 
+const ICON_STORY_POINTS = 'https://vizhe.github.io/trello-power-up/media/story-points.svg'
 // const colors = [
 //   'yellow', 'purple', 'blue', 'red', 'green',
 //   'orange', 'black', 'sky', 'pink', 'lime'
@@ -51,7 +52,7 @@ const getBadgeStoryPoints = async (t) => {
   const badgeStoryPoints = {
     title: 'Story points',
     text: 'Unestimated',
-    icon: 'media/story-points.svg',
+    icon: ICON_STORY_POINTS,
     color: 'red',
     callback: storyPointsCallback,
   }
